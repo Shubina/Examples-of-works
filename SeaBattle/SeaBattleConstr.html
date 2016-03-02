@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>seaFight</title>
+</head>
+<style>
+  body {
+    overflow: hidden;
+  }
+  .table1 {
+    float: left;
+  }
+  .table2 {
+    float: right;
+  }
+  table {
+    border-collapse: collapse;
+    margin: 0 auto;
+  }
+  tr, td {
+    border:1px solid #000;
+    text-align: center;
+  }
+  td {
+    padding: 10px;
+  }
+  .open {
+    background: #0f0;
+  }
+  .miss {
+    background: #f00;
+  }
+
+</style>
+<body>
+	<!-- <button id = 'btn'></button> -->
+  <div class="table1"></div>
+  <div class="table2"></div>
+</body>
+
+<script>
+// var btn = document.querySelector('#btn');
+// btn.textContent = 'Create field';
+
+// btn.addEventListener('click', BattleField);
+
+
+function BattleField() {
+  this.field1;
+  var selfi = this;
+  this.tdsClick = function  (event) {
+    var event = event || window.event;
+    var target = event.target || event.srcElement;
+    while (target.nodeName.toLowerCase() !== 'td' && target !== null) {
+      target = target.parentElement;
+    }
+    if (!target)
+      throw new Error('There is no such element');
+    var ind = target.dataset.index;
+    var indY = +(ind.charAt(0));
+    var indX = +(ind.charAt(1));
+    if (selfi.hit(indY, indX)) {
+      target.classList.add('open')
+    } else target.classList.add('miss');
+    return console.log(selfi.field1[indY][indX], target);
+  }
+};
+
+BattleField.prototype = {
+  constructor: BattleField,
+  fillField: function () {
+    var fieldComp = document.querySelector('.table1');
+    // var fieldHuman = document.querySelector('.table2');
+    function createTable() {
+      var tableF = document.createElement('table');
+      field = [];
+   		for (var i = 0; i < 10; i++) {
+		 	  field[i] = [];
+        var tr = document.createElement('tr');
+        for (var j = 0; j < 10; j++) {
+          var td = document.createElement('td');
+          tr.appendChild(td);
+          field[i][j] = {
+	   		 		chip: false,
+	   		 		opened: false,
+	   		 		msg: 'Промазал!',
+	   		 		placeble: true
+	   			}
+		  	}  tableF.appendChild(tr);
+      } fieldComp.appendChild(tableF);
+      (function setData() {
+        var trs = document.querySelectorAll('tr');
+        for (var k = 0; k < trs.length; k++) {
+          trs[k].dataset.index = (('0' + k).slice(-2));
+          var tds = document.querySelectorAll('td');
+          for (var m = 0; m < tds.length; m++) {
+            tds[m].dataset.index = (('0' + m).slice(-2));
+          }
+        }
+      })();
+        return field;
+    } console.table(createTable());
+    return this.field1 = field;
+  },
+  //выбор места для кораблика
+  choicePlace: function () {
+    var randY, randX;
+    var rand = function (min, max) {
+      var rand = min + Math.random() * (max - min)
+      rand = Math.round(rand);
+      return rand;
+    }
+    randY = rand(0, 9);
+    randX = rand(0, 9);
+       // выбор координаты
+    if (rand(0, 1) == 0) {
+      var dirY = rand(0, 1);
+      // выбор направления
+      dirY == 0 ? dirY = -1 : dirY = 1;
+      var dirX = 0;
+    } else {
+      dirX = rand(0, 1);
+      dirX == 0 ? dirX = -1 : dirX = 1;
+      dirY = 0;
+    }
+     console.log(randY, randX, dirY, dirX);
+    return [randY, randX, dirY, dirX];
+  },
+
+  putChip: function() {
+    var firstShip, secondShip, thirdShip, fourthShip;
+    var chip4 = 1;
+    var chip3 = 2;
+    var chip2 = 3;
+    var chip1 = 4;
+
+
+      //4x палубный
+      var choice = this.choicePlace();
+      
+        var randY = choice[0];
+        var randX = choice[1];
+        var dirY = choice[2];
+        var dirX = choice[3];
+      
+      if(!(this.field1[randY][randX].chip) &&
+          (this.field1[randY][randX].placeble)) {
+      var firstShip = this.field1[randY][randX];
+
+      var secondShip = this.field1[randY + dirY][randX + dirX];
+        
+      var thirdShip = this.field1[randY + 2*(dirY)][randX + 2*(dirX)];
+        
+      var fourthShip = this.field1[randY + 3*(dirY)][randX + 3*(dirX)];
+        
+      var arr4 = [firstShip, secondShip, thirdShip, fourthShip];
+      
+      for (var i = 0; i < arr4.length; i++) {
+        arr4[i].chip = true;
+        arr4[i].placeble = false;
+        var place = this.setPlaceble(randY, randX);
+      } 
+    console.log(arr4);
+
+    //3x
+    
+      for (var i = 0; i < chip3; i++) {
+      choice = this.choicePlace();
+
+      firstShip = this.field1[randY][randX];
+      
+      secondShip = this.field1[randY + dirY][randX + dirX];
+        
+      thirdShip = this.field1[randY + 2*(dirY)][randX + 2*(dirX)];
+        
+      var arr3 = [firstShip, secondShip, thirdShip]
+      //  for (var j = 0; j < arr3.length; j++) {
+      //   arr3[j].chip = true;
+      //   arr3[j].placeble = false;
+
+      //   var place = this.setPlaceble(randY, randX);
+      // } 
+      console.log(firstShip, secondShip, thirdShip);
+    } 
+    
+  } 
+	},
+ 	setMessage: function(i, j) {
+ 		this.field1[i][j].msg = 'Hit!';
+ 		console.log ('Hit!!!');
+    if(this.hasChips)
+    console.log('Look more ships');
+    return this.field;
+ 	},
+ 	isValid: function(i, j) {
+   	var valid;
+   	if (i >= 10 || j >= 10) {
+   		valid = false;
+   		console.log('Incorrect index!');
+   	} else {
+   		valid = true;
+   	}
+   	return valid;
+ 	},
+ 	hasChips: function() { // ПОЧЕМУ НЕ РАБОТАЕТ???
+ 		for (var i = 0; i < this.field1.length; i++) {
+ 			for (var j = 0; j < this.field1.length; j++) {
+ 				if (this.field1[i][j].chip)
+          return true;
+        else console.log('The end!');
+        return false;
+ 			}
+ 		} 
+    
+ 	},
+  setPlaceble: function(i,j) {
+    this.field1[i][j].placeble = false;
+    if ((i - 1 || j - 1 || i + 1 || j + 1) == !(this.isValid)) this.field1[i][j].placeble = false;
+    else {
+      this.field1[i+1][j].placeble = false;
+      this.field1[i-1][j].placeble = false;
+      this.field1[i][j+1].placeble = false;
+      this.field1[i][j-1].placeble = false;
+      this.field1[i-1][j-1].placeble = false;
+      this.field1[i-1][j+1].placeble = false;
+      this.field1[i+1][j+1].placeble = false;
+      this.field1[i+1][j-1].placeble = false;
+    }
+
+    // if((i == 0 && j == 0) || i == 0 || j == 0) {
+    //   this.field1[i+1][j].placeble = false;
+    //   this.field1[i][j+1].placeble = false;
+    //   this.field1[i+1][j+1].placeble = false;
+    //   if (i == 0) {
+    //     this.field1[i+1][j-1].placeble = false;
+    //     this.field1[i][j-1].placeble = false;
+    //   } else {
+    //     this.field1[i-1][j].placeble = false;
+    //     this.field1[i-1][j+1].placeble = false;
+    //   }
+    // } else if ((i == 9 && j == 9) || i == 9 || j == 9) {
+    //     this.field1[i-1][j].placeble = false;
+    //     this.field1[i][j-1].placeble = false;
+    //     this.field1[i-1][j-1].placeble = false;
+    //     if (i == 9) {
+    //       this.field1[i][j+1].placeble = false;
+    //       this.field1[i-1][j+1].placeble = false;
+    //     } else {
+    //       this.field1[i+1][j].placeble = false;
+    //       this.field1[i+1][j-1].placeble = false;
+    //     }
+    // } else {
+    //   this.field1[i+1][j].placeble = false;
+    //   this.field1[i-1][j].placeble = false;
+    //   this.field1[i][j+1].placeble = false;
+    //   this.field1[i][j-1].placeble = false;
+    //   this.field1[i-1][j-1].placeble = false;
+    //   this.field1[i-1][j+1].placeble = false;
+    //   this.field1[i+1][j+1].placeble = false;
+    //   this.field1[i+1][j-1].placeble = false;
+    // }
+  },
+  hit: function(i, j) {
+    this.field1[i][j].opened = true;
+    if (this.field1[i][j].chip) {
+      this.setMessage (i, j);
+      this.field1[i][j].chip = false;
+      this.hasChips();
+      return true;
+    } else {
+      console.log ('Miss');
+    } return false;
+  }
+}
+
+var battle1 = new BattleField();
+
+battle1.fillField();
+// console.table(battle1.fillField(10));
+
+battle1.putChip();
+
+
+document.addEventListener('click', battle1.tdsClick);
+// document.querySelector("[data-index='33']")
+
+</script>
+</html>

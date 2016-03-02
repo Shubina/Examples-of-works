@@ -1,0 +1,310 @@
+/* GENERAL STYLES */
+body{
+	margin:0;
+	font:14px/20px 'Montserrat', Arial, Helvetica, sans-serif;
+  color:#515151;
+  min-width: 320px;
+}
+img{border-style:none;}
+a{
+	text-decoration:none;
+	color:#f7f8f9;
+}
+header, footer, article, section, nav, figure, aside { 
+	display: block; 
+}
+
+.wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+header,
+.promo {
+	width: 100%;
+}
+header {
+	background: #4f4f4f;
+	padding: 38px 54px 34px;
+}
+.holder {
+	color: #e1e1e2;
+	max-width: 1024px;
+	margin: 0 auto;
+}
+.holder:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.holder .logo{
+	float: left;
+	text-transform: uppercase;
+}
+.holder li {
+	display: inline-block;
+	margin: 0 0 0 30px ;
+}
+.holder a {
+	text-transform: uppercase;
+}
+.holder .opener {
+	display: none;
+}
+.holder ul {
+	margin: 0;
+	padding: 0;
+}
+.holder li a:hover {
+	opacity: .7;
+}
+.promo {
+padding: 200px 0 167px;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+background: #19b4c6;
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMTAwJSI+CiAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjMTliNGM2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzA3OGFhNCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+background: -moz-linear-gradient(-45deg,  #19b4c6 0%, #078aa4 100%);
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#19b4c6), color-stop(100%,#078aa4));
+background: -webkit-linear-gradient(-45deg,  #19b4c6 0%,#078aa4 100%);
+background: -o-linear-gradient(-45deg,  #19b4c6 0%,#078aa4 100%);
+background: -ms-linear-gradient(-45deg,  #19b4c6 0%,#078aa4 100%);
+background: linear-gradient(135deg,  #19b4c6 0%,#078aa4 100%);
+}
+.promo-holder {
+	color: #e1e1e2;
+	margin: 0 auto;
+	max-width: 730px;
+}
+.promo-holder h1 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font: 55px/62px 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.promo-holder a {
+	display: block;
+	position: relative;
+	color: #a7d2dc;
+	margin: 58px 0 0;
+	font: 35px/53px 'Montserrat', Arial, Helvetica, sans-serif;
+}
+.promo-holder a:after,
+.promo-holder a:before {
+	content: "";
+	width: 5px;
+	height: 16px;
+	background-color: #fff;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 2px;
+	right: 0;
+	border-radius: 5px;
+}
+.promo-holder a:after {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 11px;
+	right: 0;
+}
+.gallery-holder {
+	overflow: hidden;
+	background: #bc3184;
+}
+.gallery-holder img {
+	float: left;
+	width: 70%;
+	height: auto;
+}
+.gallery-holder .button {
+	float: right;
+	width: 30%;
+	position: relative;
+}
+.gallery-holder .button:after,
+.gallery-holder .button:before {
+	content: "";
+	width: 5px;
+	height: 20px;
+	background-color: #fff;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	position: absolute;
+	top: 100px;
+	right: 50%;
+	border-radius: 5px;
+}
+.gallery-holder .button:after {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 111px;
+	right: 50%;
+}
+.foto-box {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+.foto-box li {
+	width: 33.3%;
+	display: inline-block;
+	float: left;
+}
+.foto-box li img {
+	width: 100%;
+	display: block;
+	height: auto;
+}
+.text-box {
+	width: 100%;
+	background: #ebebeb;
+	padding: 54px 0 203px;
+}
+.text-box .info {
+	max-width: 870px;
+	margin: 0 auto;
+}
+.text-box h2 {
+	font: 30px/44px 'Montserrat', Arial, Helvetica, sans-serif;
+	color: #088ca5;
+}
+.text-holder {
+	-webkit-column-count: 2;
+	-webkit-column-gap: 74px;
+	-moz-column-count: 2;
+	-moz-column-gap: 74px;
+	column-count: 2;
+	column-gap: 74px;
+}
+.text-holder p {
+	margin: 0 0 47px;
+}
+.read-more {
+	display: none;
+}
+@media screen and (max-width: 640px) {
+	header {
+		padding: 0 0 0 20px;
+		box-sizing: border-box;
+	}
+	.holder .logo {
+		padding: 10px 0 0;
+	}
+	.holder .drop-box {
+		float: right;
+		position: relative;
+	}
+	.holder .opener {
+		background: #000 none repeat scroll 0 0;
+	    box-sizing: border-box;
+	    display: block;
+	    font-size: 0;
+	    height: 37px;
+	    padding: 10px 12px;
+	    width: 41px;		
+	}
+	.holder .opener span {
+	  	border-bottom: 2px solid;
+	    border-top: 7px double;
+	    color: #fff;
+	    display: inline-block;
+	    height: 3px;
+	    width: 16px;
+	}
+	.holder nav {
+		position: absolute;
+		top: 33px;
+		right: 0;
+		width: 200px;
+		padding: 15px;
+		background: #000;
+		z-index: 100;
+		display: none;
+	}
+	.holder .drop-box:hover nav {
+		display: block;
+	} 
+	.holder li{
+		display: block;
+		margin: 0 0 10px;
+	}
+	.promo {
+		padding: 100px;
+	}
+	.promo-holder {
+		width: 100%;
+	}
+	.promo-holder h1 {
+		font: 35px/42px 'Montserrat', Arial, Helvetica, sans-serif;
+	}
+	.promo-holder a {
+		font: 25px/32px 'Montserrat', Arial, Helvetica, sans-serif;
+	}
+	.foto-box li {
+		float: none;
+		width: 100%;
+		display: block;
+	}
+	.text-holder {
+		-webkit-column-count: 1;
+		-moz-column-count: 1;
+		-o-column-count: 1;
+		column-count: 1;
+		-webkit-column-gap: 0;
+		-moz-column-gap: 0;
+		-o-column-gap: 0;
+		column-gap: 0;
+	}
+	.text-box .info {
+		max-width: 485px;
+	}
+}
+@media screen and (max-width: 320px) {
+	.promo {
+		padding: 55px 70px 51px 25px;
+	}
+	.promo h1 {
+		font: 18px/25px 'Montserrat', Arial, Helvetica, sans-serif;
+	}
+	.promo a {
+		font: 12px/19px 'Montserrat', Arial, Helvetica, sans-serif;
+		margin: 10px 0 0;
+	}
+	.promo-holder a:after,
+	.promo-holder a:before {
+		width: 3px;
+		height: 10px;
+		top: 0;
+	}
+	.promo-holder a:after {
+	top: 6px;
+	}
+	.gallery-holder .button:after,
+	.gallery-holder .button:before {
+		width: 3px;
+		height: 10px;
+		top: 25px;
+	}
+	.gallery-holder .button:after {
+		top: 30px;
+	}
+	.text-box .info {
+		max-width: 257px;
+	}
+	.text-box .read-more {
+		display: block;
+		color: #088ca5;
+		text-decoration: underline;
+		text-align: right;
+	}
+	.text-holder p:nth-child(4),
+	.text-holder p:nth-child(5) {
+		display: none;
+	}
+}

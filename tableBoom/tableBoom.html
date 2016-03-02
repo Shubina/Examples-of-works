@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	body {
+		margin: 0;
+	}
+	</style>
+</head>
+<body>
+
+	<table>
+		<tr>
+			<td>01</td>
+			<td>02</td>
+			<td>03</td>
+			<td>04</td>
+			<td>05</td>
+			<td>06</td>
+			<td>07</td>
+			<td>08</td>
+			<td>09</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>02</td>
+			<td>03</td>
+			<td>04</td>
+			<td>05</td>
+			<td>06</td>
+			<td>07</td>
+			<td>08</td>
+			<td>09</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>02</td>
+			<td>03</td>
+			<td>04</td>
+			<td>05</td>
+			<td>06</td>
+			<td>07</td>
+			<td>08</td>
+			<td>09</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>02</td>
+			<td>03</td>
+			<td>04</td>
+			<td>05</td>
+			<td>06</td>
+			<td>07</td>
+			<td>08</td>
+			<td>09</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>02</td>
+			<td>03</td>
+			<td>04</td>
+			<td>05</td>
+			<td>06</td>
+			<td>07</td>
+			<td>08</td>
+			<td>09</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>02</td>
+			<td>03</td>
+			<td>04</td>
+			<td>05</td>
+			<td>06</td>
+			<td>07</td>
+			<td>08</td>
+			<td>09</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>02</td>
+			<td>03</td>
+			<td>04</td>
+			<td>05</td>
+			<td>06</td>
+			<td>07</td>
+			<td>08</td>
+			<td>09</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>02</td>
+			<td>03</td>
+			<td>04</td>
+			<td>05</td>
+			<td>06</td>
+			<td>07</td>
+			<td>08</td>
+			<td>09</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>02</td>
+			<td>03</td>
+			<td>04</td>
+			<td>05</td>
+			<td>06</td>
+			<td>07</td>
+			<td>08</td>
+			<td>09</td>
+			<td>10</td>
+		</tr>
+		<tr>
+			<td>01</td>
+			<td>02</td>
+			<td>03</td>
+			<td>04</td>
+			<td>05</td>
+			<td>06</td>
+			<td>07</td>
+			<td>08</td>
+			<td>09</td>
+			<td>10</td>
+		</tr>
+	</table>
+<button id="click">click me</button>
+	<script>
+	var table = document.querySelector('table');
+	table.style.position = 'absolute';
+	table.style.left = (document.documentElement.clientWidth/2) - (table.clientWidth/2) + 'px';
+	table.style.top = (document.documentElement.clientHeight/2) - (table.clientHeight/2) + 'px';
+
+
+	var timer;
+	var rand = function (min, max) {//ТОЛЬКО для целых чисел
+		var min = min || 1;
+		var max = max || 8;
+		var rnd = 0;
+		do rnd = Math.floor((Math.random() * (max - min)) + min)
+		while (rnd == 0);
+		return rnd;
+	}
+	function explose() {
+		var tds = document.querySelectorAll('td');
+		var config = [];
+		for (var j = 0; j <  tds.length; j++) {
+			config.push({
+				td: tds[j],
+				top: tds[j].offsetTop,
+				left: tds[j].offsetLeft
+			});
+		};
+		for (var i = 0; i <  tds.length; i++) {
+			tds[i].style.position = 'absolute';
+			tds[i].style.top = config[i].top + "px";
+			tds[i].style.left = config[i].left + "px";
+		};
+		animate();
+		function animate () {
+			timer = setInterval(function() {
+				for (var i = 0; i <  config.length; i++) {
+					// console.log(config[0].td.style.top, config[0].td.style.left);
+					// config[0].td.style.backgroundColor = "red";
+					// window.td = config[0].td;
+					switch  (rand(1,8)) {
+						case 8:
+						config[i].td.style.left = (parseInt(config[i].td.style.left) - rand(1,9) + 'px');
+						break;
+						case 7:
+						config[i].td.style.left = (parseInt(config[i].td.style.left) + rand(1,9) + 'px');
+						break;
+						case 6:
+						config[i].td.style.top = (parseInt(config[i].td.style.top) - rand(1,9) + 'px');
+						break;
+						case 5:
+						config[i].td.style.top = (parseInt(config[i].td.style.top) + rand(1,9) + 'px');
+						break;
+						case 4:
+						config[i].td.style.top = (parseInt(config[i].td.style.top) - rand(1,9) + 'px');
+						config[i].td.style.left = (parseInt(config[i].td.style.left) - rand(1,9) + 'px');
+						break;
+						case 3:
+						config[i].td.style.top = (parseInt(config[i].td.style.top) - rand(1,9) + 'px');
+						config[i].td.style.left = (parseInt(config[i].td.style.left) + rand(1,9) + 'px');
+						break;
+						case 2:
+						config[i].td.style.top = (parseInt(config[i].td.style.top) + rand(1,9) + 'px');
+						(parseInt(config[i].td.style.left) + rand(1,9) + 'px');
+						break;
+						case 1:
+						config[i].td.style.top = (parseInt(config[i].td.style.top) + rand(1,9) + 'px');
+						(parseInt(config[i].td.style.left) - rand(1,9) + 'px');
+						break;
+					}
+					
+					if (config[i].td.getBoundingClientRect().bottom <= 0 ||
+							config[i].td.getBoundingClientRect().top >= document.body.clientHeigth ||
+							config[i].td.getBoundingClientRect().left <= 0 ||
+							config[i].td.getBoundingClientRect().right >= document.body.clientWidth
+							) {
+						config.splice(i, 1);
+					}
+					if (config.length == 0)
+						clearInterval(timer);
+				};
+			}, 30);
+		}
+	}
+	explose();
+
+	document.querySelector('#click').onclick = function() {
+		clearInterval(timer);
+	}
+// function createTable (rows, cols) {
+//    var table = document.createElement('table');
+//    for (var i = 0; i < rows; i++) {
+//    	   var tr = document.createElement('tr');
+//    	   tr.style.backgroundColor = (i%2 == 0) ? 'silver' : '' ;
+//    	   for (var j = 0; j < cols; j++) {
+//    	   		var td = document.createElement('td');
+//    	   		td.textContent = i + ': ' + j;
+//    	   		tr.appendChild(td);
+//    	   }
+//    	   table.appendChild(tr);
+//    }
+//    document.body.appendChild(table);
+// }
+// // createTable(10, 5);
+// function createTableString (rows, cols) {
+//    var table = '<table>';
+//    for (var i = 0; i < rows; i++) {
+//    			if (i%2 == 0) {
+//    				var tr = "<tr style=\"background-color: silver;\">";
+//    			} else {
+//    				var tr = "<tr>";
+//    			}
+
+//    	   for (var j = 0; j < cols; j++) {
+//    	   		var td = '<td>' + i + ': ' + j + '</td>';
+//    	   		tr += td;
+//    	   }
+//    	   tr += '</tr>';
+//    	   table += tr;
+//    }
+//    table += '</table>';
+//    document.body.innerHTML = table;
+// }
+// // createTableString(10, 10);
+
+</script>
+</body>
+</html>

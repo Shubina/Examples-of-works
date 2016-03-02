@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Button Close</title>
+	<style>
+	.box {
+		width: 500px;
+		background: #cff;
+		color: #000;
+		margin: 0 auto;
+		overflow: hidden;
+		padding: 3px;
+		border-top: 2px solid #ccf;
+
+	}
+	.box:last-child {
+		border-bottom: 2px solid #ccf;
+	}
+	.btn {
+		color: #f00;
+		padding: 0;
+		border:2px solid transparent;
+		background-color: transparent;
+		float: right;
+	}
+	.box>p {
+		float: left;
+	}
+	</style>
+</head>
+<body>
+	<!-- <button id = 'btn'></button>
+	<div id = 'text'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo consequatur voluptatem quos voluptate quas cupiditate recusandae nihil cumque ipsam, dolorum iure fuga, alias quibusdam magnam maiores, deserunt! Incidunt, beatae, nisi.</div>
+ -->
+	<div class="box">
+		<button class="btn"></button>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quae non nostrum voluptatum modi aut expedita repellendus, </p>
+	</div>
+	<div class="box">
+		<button class="btn"></button>
+		<p> Id quae non nostrum voluptatum modi aut expedita repellendus, odit, ea sed laudantium harum dicta praesentium consequuntur nihil, vel nesciunt laboriosam molestiae.</p>
+	</div>
+	<div class="box">
+		<button class="btn"></button>
+		<p>vel nesciunt laboriosam molestiae.</p>
+	</div>
+</body>
+</html>
+<script>
+// var btn = document.querySelector('#btn');
+// btn.textContent = 'Click'
+// var text = document.querySelector('#text')
+
+// function hideFunction () {
+// 	
+// 	if(text.style.display !== 'none')
+// 		text.style.display = 'none';
+// 	else
+// 		text.style.display = '';
+// 		// text.style.display = 'block';
+// }
+// btn.addEventListener('click', hideFunction);
+
+
+var closeBtn = document.querySelectorAll('.btn');
+for (var i = 0; i < closeBtn.length; i++) {
+	closeBtn[i].textContent = '[x]';
+	closeBtn[i].addEventListener('click', hideFunction);
+};
+function hideFunction (event) {
+	var element = event.currentTarget;
+
+	// if (element.parentNode != null)
+	// 	element.parentNode.style.display = 'none';
+	
+	if (element.closest('div') != null)
+		element.closest('div').style.display = 'none';
+}
+
+
+
+
+
+</script>
