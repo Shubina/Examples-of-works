@@ -1,0 +1,255 @@
+@media screen and (max-width:1170px) {
+	.header-holder {
+	padding: 52px 3.33% 0;
+	}
+	.slogan-box {
+		width: 57%;
+	}
+	.slogan-box p {
+		width: 80%;
+	}
+	.tabs {
+	padding: 0 3.33%;
+	}
+	.el-box {
+	padding: 0 3.33%;
+	}
+	.guarantee-box {
+	padding: 50px 0;
+	}
+}
+@media screen and (max-width:1023px) {
+	.slogan-box {
+		width: 67%;
+	}
+}
+@media screen and (max-width:923px) {
+	.main-header {
+		-webkit-background-size: cover;
+		background-size: cover;
+    	-ms-background-position-x: 0;
+    	background-position-x: 0;
+    	background-position: left;
+	}
+	.slogan-box {
+	width: 100%;
+	}
+	.tabs {
+		margin-bottom: 20px;
+	}
+	.damages-list {
+		-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	    margin-bottom: 0;
+	}
+	.tabs li {
+		width: 100%;
+		margin: 0 0 80px;
+	}
+	.elements h2 {
+		font-size: .9em;
+	}
+	.elements span {
+		font-size: .6em;
+	}
+	.elements {
+		padding: 0 3% 14px;
+	}
+	.img-block {
+		display: none;
+	}
+	.guarantee-box {
+		-webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+	padding-top: 9px;
+	}
+	.guarantee-text {
+		margin: 0 3.33% 148px;
+	}
+	.guarantee-text h3 {
+		width: 50%;
+	}
+	.help-block {
+		padding: 0 190px 103px 3.33%;
+		background: #2dd48c;
+	}
+	.help-block:before {
+		-moz-transform: scale(1.5) rotate(-3deg) translateX(30px) translateY(-60px);
+		-webkit-transform: scale(1.5) rotate(-3deg) translateX(30px) translateY(-60px);
+		-o-transform: scale(1.5) rotate(-3deg) translateX(30px) translateY(-60px);
+		-ms-transform: scale(1.5) rotate(-3deg) translateX(30px) translateY(-60px);
+		transform: scale(1.5) rotate(-3deg) translateX(30px) translateY(-60px);
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		background: #2dd48c;
+		width: 100%;
+		height: 100px;
+		z-index: -1;
+	}
+	.contact-form {
+		width: 100%;
+		padding: 0 3.33%;
+		box-sizing: border-box;
+		-webkit-order: 2;
+	    -ms-flex-order: 2;
+	    order: 2;
+	}
+	main {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	    flex-direction: column;
+	}
+	.el-box {
+		margin-bottom: 65px;
+	}
+	.guarantee-box {
+		-webkit-order: 1;
+	    -ms-flex-order: 1;
+	    order: 1;
+	}
+	.pagespan {
+		-webkit-order: 0;
+	    -ms-flex-order: 0;
+	    order: 0;
+	}
+	footer>.contacts {
+		width: 100%;
+	}
+	.services {
+		padding: 0;
+	}
+	.services-sidebar {
+		float: none;
+		width: 100%;
+		border-right: none;
+		margin-left: 0;
+	}
+	.services-sidebar h3 {
+		margin-left: 3.33%;
+	}
+	.services-sidebar:before {
+		left: 3.33%;
+	}
+	.services-sidebar ul {
+		-moz-column-count: 2;
+		column-count: 2;
+		-moz-column-gap: 2em;
+		column-gap: 2em;
+		margin: 0 0 73px 3.33%;
+	}
+	.services-sidebar a {
+		line-height: 50px;
+	}
+	.services-content {
+		float: none;
+		width: 100%;
+		margin-left: 0;
+	}
+	.equipment img {
+		right: 0;
+	}
+	.work-with {
+		margin-left: 3.33%;
+	}
+	.serve-commercial {
+		float: none;
+		width: 100%;
+	}
+	.residental {
+		float: none;
+		width: 100%;
+		margin: 70px 0  0;
+	}
+	.contact-page {
+		width: 100%;
+		margin-bottom: 15%;
+	}
+	.left-col {
+		float: none;
+		width: 100%;
+		margin-bottom: 15%;
+	}
+	.right-col {
+		float: none;
+		width: 90%;
+	}
+}
+
+@media screen and (max-width:535px) {
+	.header-holder {
+		padding-top: 10px;
+	}
+	.wrap {
+		margin-bottom: 40px;
+	}
+	.slogan-box {
+		padding-bottom: 80px;
+	}
+	.slogan-box h1 {
+		font-size: 30px;
+		line-height: 33px;
+	}
+	.el-box {
+		padding: 0;
+		margin-bottom: 30px;
+	}
+	.elements {
+		padding: 0;
+		border: 7px solid #2dd48c;
+	}
+	.elements img {
+		width: 50%;
+	}
+	/**/
+	.contacts {
+		display: block;
+		white-space: nowrap;
+		margin: 0 auto;
+	}
+	.guarantee-text h3{
+		width: 100%;
+	}
+	.help-block {
+		padding: 30px 2%;
+	}
+	.equipment img {
+		opacity: .3;
+	}
+	.equip-text {
+		width: 100%;
+	}
+	.popup-box {
+    padding: 0 12vw;
+
+	/*!!!!!!!!!!!!!!ПОПАП*/
+	.popup-close {
+		background-size: 70%;
+		right: 0;
+	}
+	.popup-free {
+		width: auto;
+	    height: auto;
+	    margin: -25% auto 0;
+	    padding: 2%;
+	    left: 0;
+	    right: 0;
+	}
+	.popup-free h2 {
+		font-size: 18px;
+		padding: 0 2%;
+	}
+	.popup-free p {
+		font-size: 14px;
+		padding: 0 2%;
+	}
+}
