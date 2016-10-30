@@ -1,0 +1,29 @@
+<header class="child-header">
+	<div class="child-header-holder">
+		<strong class="arrow"><a ui-sref="home" class="home"><img src="/assets/images/arrow.png" alt="arrow"></a></strong>
+		<nav>
+        <a class="nav-menu" ui-sref="contact">Contact</a>
+      </nav>
+	</div>
+</header>
+<section class="team-box about">
+	<h1 class="head-text">Our team</h1>
+	<div class="holder">
+		<figure class="person" ng-repeat="item in main.items.team">
+		  <img ng-src={{item.img}} alt="face" />
+		  <figcaption class="text-team">
+		  <h3>{{item.name}}</h3>
+		  <p>{{item.post}}</p>
+		  <p class="description">{{item.description}}</p>
+		  <div class="social">
+				<ul class="networks">
+					<li><a href="{{item.instagram}}" class="instagram">instagram</a></li>
+					<li><a href="{{item.twitter}}" class="twitter">twitter</a></li>
+					<li><a href="{{item.facebook}}" class="facebook">facebook</a></li>
+				</ul>
+			</div>
+		  </figcaption>
+		</figure>
+	</div>
+</section>
+<footer-dir></footer-dir>

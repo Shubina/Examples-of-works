@@ -1,0 +1,26 @@
+.child-header {
+	height: 57px;
+	background-color: #1b1b1b;
+	margin-bottom: 89px;
+}
+.child-header-holder {
+	padding: 21px 3.33% 23px;
+	 display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+.child-header .arrow {
+	display: block;
+}
+.child-header nav {
+	display: block;
+	text-decoration: underline;
+	cursor: pointer;
+}

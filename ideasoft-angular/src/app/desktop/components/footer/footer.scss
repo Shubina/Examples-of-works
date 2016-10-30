@@ -1,0 +1,105 @@
+footer {
+	background: -moz-linear-gradient(left,  rgba(41,10,88,0.7) 0%, rgba(99,42,64,0.7) 35%, rgba(212,101,18,0.7) 71%, rgba(255,123,0,0.7) 100%);
+background: -webkit-linear-gradient(left,  rgba(41,10,88,0.7) 0%,rgba(99,42,64,0.7) 35%,rgba(212,101,18,0.7) 71%,rgba(255,123,0,0.7) 100%);
+background: linear-gradient(to right,  rgba(41,10,88,0.7) 0%,rgba(99,42,64,0.7) 35%,rgba(212,101,18,0.7) 71%,rgba(255,123,0,0.7) 100%);
+}
+.footer-bg {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 0 3.33%;
+}
+.info-holder {
+	margin-bottom: 32px;
+}
+.info-box {
+	float: left;
+	width: 55%;
+	overflow: hidden;
+	padding: 63px 0 29px 0;
+	box-sizing: border-box;
+	font:12px/16px 'open_sansregular', Arial, Helvetica, sans-serif;
+}
+.info-box .footer-nav {
+	float: left;
+	width: 8.33%;
+
+}
+.footer-nav strong a {
+	display: inline-block;
+	margin-bottom: 20px;
+}
+.footer-nav li {
+	list-style: none;
+	text-decoration: underline;
+}
+.seo {
+	float: left;
+	width: 31.66%;
+	margin: 0 15.5% 0 18.33%;
+}
+.social {
+	margin-bottom: 25px;
+}
+.social li {
+	list-style: none;
+    display: inline-block;
+    width: 32px;
+}
+.social li a {
+	position: relative;
+	display: inline-block;
+	font-size: 0;
+	line-height: 0;
+	line-height: 19px;
+}
+.social li a:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('../assets/images/networks.png') no-repeat;
+}
+.social li .instagram:after {
+    background-position: 0 0;
+	width: 19px;
+	height: 19px;
+}
+.social li .twitter:after {
+    background-position: -34px 0;
+	width: 23px;
+	height: 19px;
+}
+.social li .facebook:after {
+    background-position: -73px 0;
+	width: 9px;
+	height: 18px;
+}
+.footer-text {
+	margin: 0;
+}
+.contacts {
+	width: 17.5%;
+	float: left;
+}
+address {
+	font-style: normal;
+	margin: 47px 0 0;
+	font:12px/16px 'open_sansregular', Arial, Helvetica, sans-serif;
+}
+address>span {
+	display: inline-block;
+}
+.phone, .email {
+	text-decoration: underline;
+}
+.copyright {
+	clear: both;
+	opacity: 0.1;
+	padding: 18px 0 0;
+	border-top: 2px solid #a68ea5;
+}
+.map-box {
+	float: right;
+	width: 45%;
+	
+}

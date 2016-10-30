@@ -1,0 +1,36 @@
+.blog {
+	margin-bottom: 60px;
+	padding: 0 3.33%;
+}
+.blog-box {
+	list-style: none;
+	margin-bottom: 43px;
+
+}
+.blog-text {
+	background-color: #1b1b1b;
+	padding: 34px 76px 34px 26px;
+}
+.blog img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.blog-text h2,
+.blog-text p {
+	padding: 0;
+}
+.blog-text h2 {
+	text-decoration: underline;
+	cursor: pointer;
+	padding-bottom: 18px;
+	font: 19px/22px 'open_sansbold', Arial, Helvetica, sans-serif;;
+}
+.blog-text a:hover {
+	text-decoration:none; 
+	color: #bde0ff;
+}
+.blog-box img:hover {
+	-webkit-filter: grayscale(70%);
+	filter: grayscale(70%);
+}

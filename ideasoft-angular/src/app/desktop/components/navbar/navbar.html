@@ -1,0 +1,38 @@
+<header class="main-header">
+	<div class="wrapper-bg">
+		<video id="video-bg-elem" muted autoplay="autoplay" poster="/assets/video/abcd.jpg" title="1280" loop="loop">
+			<source src="/assets/video/abcd.mp4" type="video/mp4" />
+			<source src="/assets/video/abcd.webm" type="video/webm" />
+		</video>
+	</div>
+
+	<div class="header-holder">
+			<div class="wrap">
+			<strong class="logo"><a ui-sref="#"><img src="/assets/images/logo.png" alt="logo"></a></strong>
+			<nav>
+				<ul class="nav-menu">
+					<li ng-class="{'active': vm.$state.is('portfolio')}"><a ui-sref="portfolio">Portfolio</a></li>
+					<li ng-class="{'active': vm.$state.is('about')}"><a ui-sref="about">About</a></li>
+					<li ng-class="{'active': vm.$state.is('blog')}"><a ui-sref="blog">Blog</a></li>
+				</ul>
+			</nav>
+			</div>
+		<!-- <div class="drop-box">
+					<span class="opener"></span>
+					<ul id="nav">
+						<li><a href="#">Portfolio</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Blog</a></li>
+						
+					</ul>
+				</div> -->
+		<div class="slogan-box">
+			<h3>lead of the development</h3>
+			<h1>precision in every detail</h1>
+			<div class="butn-group">
+				<a ui-sref="portfolio" class="butn butn-nav">Portfolio</a>
+				<a href="#contact" target="_self" class="butn butn-contact">Contact</a>
+			</div>
+		</div>
+	</div>
+</header>

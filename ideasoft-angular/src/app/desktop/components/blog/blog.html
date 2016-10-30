@@ -1,0 +1,21 @@
+<header class="child-header">
+	<div class="child-header-holder">
+		<strong class="arrow"><a ui-sref="home"><img src="/assets/images/arrow.png" alt="arrow"></a></strong>
+		<nav>
+        	<a class="nav-menu" ui-sref="contact">Contact</a>
+      </nav>
+	</div>
+</header>
+<section class="blog container-fluid">
+	<h1 class="head-text">Blog</h1>
+	<ul class="row">
+		<li class="blog-box col-md-4" ng-repeat="item in main.items.blogInfo track by $index">
+			<img ng-src={{item.img}} alt="blog-img">
+			<div class="blog-text">
+				<h2><a href="#">{{item.head}}</a></h2>
+				<p>{{item.description}}</p>
+			</div>
+		</li>
+	</ul>
+</section>
+<footer-dir></footer-dir>

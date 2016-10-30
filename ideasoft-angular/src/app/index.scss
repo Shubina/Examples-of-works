@@ -1,0 +1,89 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+
+
+/**
+ *  Do not remove the comments below. It's the markers used by wiredep to inject
+ *  sass dependencies when defined in the bower.json of your dependencies
+ */
+// bower:scss
+// endbower
+
+body{
+	margin:0;
+	font:14px/17px 'open_sansregular', Arial, Helvetica, sans-serif;
+	color:#fff;
+    background-color: #1e1e1e;
+}
+img{border-style:none;}
+a {
+	text-decoration:none;
+	color: #fff;
+}
+a:hover,
+a:active,
+a:focus {text-decoration:none; color: #bde0ff;}
+input,
+textarea,
+select{
+	font:100% Arial, Helvetica, sans-serif;
+	vertical-align:middle;
+	color:#000;
+}
+header, footer, article, section, nav, figure, aside { display: block; }
+figure, ul, li { margin:0; padding:0; }
+input[type="image"]{padding:0;border:none;}
+input[type=text], input[type=password], input[type=file], input[type=submit], input[type=button], textarea{-webkit-appearance:none;}
+form,
+fieldset{
+	margin:0;
+	padding:0;
+	border-style:none;
+}
+.butn {
+	background: #000;
+	color: #fff;
+	display: block;
+    margin: 0 auto;
+    cursor: pointer;
+	text-align: center;
+    line-height: 42px;
+    // box-sizing: content-box;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    width: 165px;
+    height: 42px;
+    text-transform: uppercase;
+}
+.butn:hover {
+	color: #fff;
+    border: 1px solid transparent;
+    
+}
+
+[ui-view].ng-enter, [ui-view].ng-leave {
+    -webkit-transition:all .5s ease-in-out;
+    transition:all .5s ease-in-out;
+}
+ 
+[ui-view].ng-enter {
+    transform:  translateX(-100%);
+}
+ 
+[ui-view].ng-enter-active {
+    transform:  translateX(0);
+}
+
+
+
+/**
+ *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+ *  all your sass files automatically
+ */
+// injector
+// endinjector

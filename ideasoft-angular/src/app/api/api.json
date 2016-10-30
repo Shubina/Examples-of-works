@@ -1,0 +1,198 @@
+{
+	"skills": {
+		"html": [1,2,3],
+		"css": [4,5,6],
+		"js": [7,8,9],
+		"php": [1,2,3],
+		"node": [1,2,3],
+		"ux": [1,2,3],
+		"qa": [1,2,3]
+		},
+	"portfolio" : [
+		{
+			"head": "Face Watch",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+			"img": [
+				"/assets/images/face/1.png",
+				"/assets/images/face/2.png",
+				"/assets/images/face/3.png"
+			]},
+		{
+			"head": "Face Watch",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+			"img": [
+				"/assets/images/face/1.png",
+				"/assets/images/face/2.png",
+				"/assets/images/face/3.png"
+			]},
+		{
+			"head": "Face Watch",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+			"img": [
+				"/assets/images/face/1.png",
+				"/assets/images/face/2.png",
+				"/assets/images/face/3.png"
+			]},
+		{
+			"head": "Face Watch",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+			"img": [
+				"/assets/images/face/1.png",
+				"/assets/images/face/2.png",
+				"/assets/images/face/3.png"
+			]},
+		{
+			"head": "Face Watch",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+			"img": [
+				"/assets/images/face/1.png",
+				"/assets/images/face/2.png",
+				"/assets/images/face/3.png"
+			]},
+		{
+			"head": "Face Watch",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+			"img": [
+				"/assets/images/face/1.png",
+				"/assets/images/face/2.png",
+				"/assets/images/face/3.png"
+			]},
+		{
+			"head": "Face Watch",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+			"img": [
+				"/assets/images/face/1.png",
+				"/assets/images/face/2.png",
+				"/assets/images/face/3.png"
+			]},
+		{
+			"head": "Face Watch",
+			"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+			"img": [
+				"/assets/images/face/1.png",
+				"/assets/images/face/2.png",
+				"/assets/images/face/3.png"
+			]}
+		],
+	"team": [
+		{
+	          "name": "Alex",
+	          "post": "Chief Executive Officer",
+	          "img": "/assets/images/team/1.jpg",
+	          "instagram": "#",
+	          "twitter": "#",
+	          "facebook": "#",
+	          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+	        },
+	        {
+	          "name": "Max",
+	          "post": "Who?",
+	          "img": "/assets/images/team/1.jpg",
+	          "instagram": "#",
+	          "twitter": "#",
+	          "facebook": "#",
+	          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+	        },
+	        {
+	          "name": "Vladimir",
+	          "post": "Chief Financial Officer",
+	          "img": "/assets/images/team/1.jpg",
+	          "instagram": "#",
+	          "twitter": "#",
+	          "facebook": "#",
+	          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+	        },
+	        {
+	          "name": "Vladislav",
+	          "post": "Technologist",
+	          "img": "/assets/images/team/1.jpg",
+	          "instagram": "#",
+	          "twitter": "#",
+	          "facebook": "#",
+	          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+	        },
+	        {
+	          "name": "Vladimir",
+	          "post": "Chief Financial Officer",
+	          "img": "/assets/images/team/1.jpg",
+	          "instagram": "#",
+	          "twitter": "#",
+	          "facebook": "#",
+	          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+	        },
+	        {
+	          "name": "Vladimir",
+	          "post": "Chief Financial Officer",
+	          "img": "/assets/images/team/1.jpg",
+	          "instagram": "#",
+	          "twitter": "#",
+	          "facebook": "#",
+	          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+	        },
+	        {
+	          "name": "Vladimir",
+	          "post": "Chief Financial Officer",
+	          "img": "/assets/images/team/1.jpg",
+	          "instagram": "#",
+	          "twitter": "#",
+	          "facebook": "#",
+	          "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+	        }
+	  ],
+	"blogInfo" : [
+		{
+		"head": "Переезд в офис",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+		"img":
+			"/assets/images/blog/1.jpg"
+		},
+		{
+		"head": "Переезд в офис",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+		"img":
+			"/assets/images/blog/1.jpg"
+		},
+		{
+		"head": "Переезд в офис",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+		"img":
+			"/assets/images/blog/1.jpg"
+		},
+		{
+		"head": "Переезд в офис",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+		"img":
+			"/assets/images/blog/1.jpg"
+		},
+		{
+		"head": "Переезд в офис",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+		"img":
+			"/assets/images/blog/1.jpg"
+		},
+		{
+		"head": "Переезд в офис",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+		"img":
+			"/assets/images/blog/1.jpg"
+		},
+		{
+		"head": "Переезд в офис",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+		"img":
+			"/assets/images/blog/1.jpg"
+		},
+		{
+		"head": "Переезд в офис",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+		"img":
+			"/assets/images/blog/1.jpg"
+		},
+		{
+		"head": "Переезд в офис",
+		"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi",
+		"img":
+			"/assets/images/blog/1.jpg"
+		}
+	]
+}
